@@ -1,4 +1,3 @@
-import 'package:car_dashboard/theme.dart';
 import 'package:car_dashboard/widgets/footerWidgets/FastClimate.dart';
 import 'package:flutter/material.dart';
 

@@ -2,7 +2,6 @@ import 'package:car_dashboard/providers/GlobalProvider.dart';
 import 'package:car_dashboard/widgets/headerWidgets/BrightnessWidget.dart';
 import 'package:car_dashboard/widgets/headerWidgets/ODBConnection.dart';
 import 'package:car_dashboard/widgets/headerWidgets/WatchTime.dart';
-import 'package:car_dashboard/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

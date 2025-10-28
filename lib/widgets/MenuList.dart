@@ -34,7 +34,7 @@ class _MenulistState extends State<Menulist> {
               }
             },
             child: menuItem.onlyIcon
-                ? menuItem?.iconSvg != null
+                ? menuItem.iconSvg != null
                       ? SvgPicture.asset(
                           menuItem.iconSvg,
                           width: 30,

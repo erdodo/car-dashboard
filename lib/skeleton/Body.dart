@@ -1,5 +1,4 @@
 import 'package:car_dashboard/providers/GlobalProvider.dart';
-import 'package:car_dashboard/theme.dart';
 import 'package:car_dashboard/widgets/bodyLayout/CenterBody.dart';
 import 'package:car_dashboard/widgets/bodyLayout/LeftBody.dart';
 import 'package:car_dashboard/widgets/bodyLayout/RightBody.dart';

@@ -1,36 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
 import 'package:intl/intl.dart';
-import 'package:intl/date_symbol_data_local.dart';
-
-/*
-  ÖNEMLİ KURULUM NOTLARI:
-
-  1. 'intl' Paketini Ekleyin:
-     Bu kodun çalışması için 'intl' paketine ihtiyacınız var.
-     'pubspec.yaml' dosyanıza şu satırı ekleyin:
-
-     dependencies:
-       flutter:
-         sdk: flutter
-       intl: ^0.19.0 # (veya 'dart pub add intl' komutuyla en son sürümü ekleyin)
-
-  2. Türkçe Yerelleştirmeyi Başlatın:
-     'DateFormat' ile Türkçe tarih (Pazartesi, Ekim vb.) adlarını doğru
-     görüntülemek için uygulamanızın 'main.dart' dosyasındaki 'main'
-     fonksiyonunu aşağıdaki gibi güncellemeniz gerekir:
-
-     void main() async {
-
-       WidgetsFlutterBinding.ensureInitialized();
-
-
-       await initializeDateFormatting('tr_TR', null);
-
-
-       runApp(const MyApp());
-     }
-*/
 
 class Watchtime extends StatefulWidget {
   const Watchtime({super.key});
@@ -110,14 +80,6 @@ class _WatchtimeState extends State<Watchtime> {
             ],
           ),
 
-          /* Text(
-            formattedDate,
-            style: TextStyle(
-              fontWeight: FontWeight.w200,
-              fontSize: 12,
-              color: Colors.white.withOpacity(0.8),
-            ),
-          ),*/
         ],
       ),
     );
