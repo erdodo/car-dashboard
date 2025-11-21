@@ -59,14 +59,13 @@ class _HeadState extends State<Head> {
                       ),
                     ),
                     child: Text("Ekran 2"),
-
                   ),
                   ElevatedButton(
                     onPressed: () {
                       globalProvider.setHomeScreenIndex(3);
                     },
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: screenIndex == 2
+                      backgroundColor: screenIndex == 3
                           ? Colors.cyan
                           : Colors.grey,
                       shape: RoundedRectangleBorder(
@@ -74,7 +73,6 @@ class _HeadState extends State<Head> {
                       ),
                     ),
                     child: Text("Ekran 3"),
-
                   ),
                 ],
               );

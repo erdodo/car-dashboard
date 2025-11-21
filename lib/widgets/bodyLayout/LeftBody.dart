@@ -1,5 +1,6 @@
 import 'package:car_dashboard/charts/TachometerGauge.dart';
 import 'package:car_dashboard/skeleton/Body.dart';
+import 'package:car_dashboard/widgets/NodeMCUDataTable.dart';
 import 'package:car_dashboard/widgets/leftBodyWidgets/IllustratedInformation.dart';
 import 'package:flutter/material.dart';
 
@@ -21,16 +22,19 @@ class _LeftbodyState extends State<Leftbody> {
   @override
   Widget build(BuildContext context) {
     return Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          widget.selectedScreen.id == 1 ? IllustratedInformation(gridCount: widget.selectedScreen.gridCount) : Container(),
-          widget.selectedScreen.id == 2
-              ? TachometerGauge(rpmValue: rpmValue, gridCount: widget.selectedScreen.gridCount,)
-
-              : Container(),
-
-        ],
-
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        widget.selectedScreen.id == 1
+            ? IllustratedInformation(gridCount: widget.selectedScreen.gridCount)
+            : Container(),
+        widget.selectedScreen.id == 2
+            ? TachometerGauge(
+                rpmValue: rpmValue,
+                gridCount: widget.selectedScreen.gridCount,
+              )
+            : Container(),
+        widget.selectedScreen.id == 3 ? NodeMCUDataTable() : Container(),
+      ],
     );
   }
 }

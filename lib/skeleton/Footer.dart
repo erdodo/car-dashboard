@@ -1,4 +1,5 @@
 import 'package:car_dashboard/widgets/footerWidgets/FastClimate.dart';
+import 'package:car_dashboard/widgets/footerWidgets/NodeMCUClimateWidget.dart';
 import 'package:flutter/material.dart';
 
 class Footer extends StatefulWidget {
@@ -17,11 +18,8 @@ class _FooterState extends State<Footer> {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          Fastclimate(),
-          Text("Footer", style: TextStyle(color: Colors.white, fontSize: 24)),
-        ],
-      )
+        children: [Fastclimate(), NodeMCUClimateWidget()],
+      ),
     );
   }
 }
